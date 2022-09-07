@@ -1,4 +1,4 @@
-# react-ts-dashboard-01
+# React.js (TS) + Redux + Bootstrap5 + SCSS + SweetAlert2
 
 ## Install
 $ npm i --force

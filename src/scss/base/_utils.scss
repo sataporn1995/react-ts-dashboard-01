@@ -1,0 +1,35 @@
+.set-items-center {
+  display: grid;
+  place-items: center;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px $black-25, -1px -1px $white-75;
+}
+
+.text-shadow-sm {
+  text-shadow: 1px 1px $black-25, -0.5px -0.5px $white-75;
+}
+
+.title-text-shadow {
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow: 0 0 2px $white-50, -1px 0 #55e, 0 1px #55e, 1px 0 #55e,
+    0 -1px #55e;
+  filter: drop-shadow(0 0 0.75rem $white-75);
+}
+
+.text-green {
+  color: #0f0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+

@@ -1,0 +1,42 @@
+.input-box {
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $white-25;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+
+    &:valid ~ span,
+    &:focus ~ span {
+      transform: translate(10px, -7px);
+      font-size: 0.65em;
+      padding: 0 10px;
+      background: #35f;
+      color: #fff;
+      border-radius: 2px;
+      letter-spacing: 0.2em;
+    }
+
+    &:valid,
+    &:focus {
+      border: 1px solid $white-25;
+    }
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: $white-25;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+}

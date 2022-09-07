@@ -1,0 +1,53 @@
+.login-page {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient($black-50, $black-25),
+    url(./images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  .login-form {
+    width: 400px;
+    height: 350px;
+    background: $white-25;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    padding: 20px 25px;
+    user-select: none;
+    box-shadow: 0 0 30px 10px $white-15, 0 0 40px 20px $white-10;
+
+    .login-logo {
+      filter: drop-shadow(0 0 5px $white-75);
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      color: $white;
+      text-shadow: 2px 2px $black-25, -1px -1px $white-50;
+      letter-spacing: 0.3px;
+
+      .small {
+        font-size: 0.5em;
+      }
+    }
+
+    .btn-login {
+      background: rgb(14, 121, 255, 0.5);
+      backdrop-filter: blur(15px);
+      color: $white;
+      border: none;
+      border-radius: 5px;
+
+      &:hover {
+        filter: brightness(1.1);
+        box-shadow: 0 0 10px 5px rgb(14, 121, 255, 0.25);
+      }
+
+      &:active {
+        box-shadow: 0 0 10px 5px rgb(14, 121, 255, 0.5);
+      }
+    }
+  }
+}

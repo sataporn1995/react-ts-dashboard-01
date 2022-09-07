@@ -1,0 +1,68 @@
+@mixin declare-size($name, $property, $value, $unit) {
+  $size: $value + $unit;
+  .#{$name}-#{$value} {
+    #{$property}: #{$size};
+  }
+}
+
+//! % width
+@for $n from 1 through 100 {
+  @include declare-size("w", width, $n, "%");
+}
+
+//! % height
+@for $n from 1 through 100 {
+  @include declare-size("h", height, $n, "%");
+}
+
+//! % viewport width
+@for $n from 1 through 100 {
+  @include declare-size("vw", width, $n, "vw");
+}
+
+//! % viewport height
+@for $n from 1 through 100 {
+  @include declare-size("vh", height, $n, "vh");
+}
+
+//! % viewport minimum width
+@for $n from 1 through 100 {
+  @include declare-size("w-vmin", width, $n, "vmin");
+}
+
+//! % viewport minimum height
+@for $n from 1 through 100 {
+  @include declare-size("h-vmin", height, $n, "vmin");
+}
+
+//! font-size: 0.30rem to 0.95rem
+@for $n from 6 to 20 {
+  $val: $n * 5;
+  @if $val < 10 {
+    $val: "0" + $val;
+  }
+  $size: "0." + $val + "rem!important";
+  .rem-#{$val} {
+    font-size: #{$size};
+  }
+}
+
+//! font-size: 1.05rem to 1.95rem
+@for $n from 1 to 20 {
+  $val: $n * 5;
+  @if $val < 10 {
+    $val: "0" + $val;
+  }
+  $size: "1." + $val + "rem!important";
+  .rem-1#{$val} {
+    font-size: #{$size};
+  }
+}
+
+//! side zero
+$sides: "top", "bottom", "left", "right";
+@each $side in $sides {
+  .#{$side}-0 {
+    #{$side}: 0;
+  }
+}

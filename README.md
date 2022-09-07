@@ -12,7 +12,7 @@ http://localhost:3005/
 ## Login page (No Authentication)
 
 <div>
-<image src="https://raw.githubusercontent.com/sataporn1995/react-ts-dashboard-01/main/public/images/login.jpg" alt="No Image" width="500" />
-<image src="https://raw.githubusercontent.com/sataporn1995/react-ts-dashboard-01/main/public/images/page.jpg" alt="No Image" width="500" />
+<image src="https://raw.githubusercontent.com/sataporn1995/react-ts-dashboard-01/main/public/images/login.jpg" alt="No Image" width="400" />
+<image src="https://raw.githubusercontent.com/sataporn1995/react-ts-dashboard-01/main/public/images/page.jpg" alt="No Image" width="400" />
 </div>
 
